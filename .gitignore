@@ -16,7 +16,11 @@
 *.pid
 
 # Keep configuration files (like squid.conf)
-/squid.conf
+*.tar.gz
+*.zip
+*.exe
+*.bin
+*.gz
 
 # Ignore OS files
 .DS_Store
