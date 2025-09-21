@@ -1,0 +1,30 @@
+# Ignore system-specific files
+*.swp
+*.swo
+*.bak
+
+# Ignore log files
+/var/log/
+/home/helvetasbgd/squid-stack/*.log
+
+# Ignore cache directories
+/cache/
+/var/spool/squid/
+
+# Ignore temporary files
+*.tmp
+*.pid
+
+# Keep configuration files (like squid.conf)
+/squid.conf
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
+prometheus-2.47.0.linux-amd64/prometheus
+prometheus-2.47.0.linux-amd64/promtool
+
+
+prometheus-2.47.0.linux-amd64/*
+loki-linux-amd64
+promtail-linux-amd64
