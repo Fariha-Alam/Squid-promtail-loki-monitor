@@ -1,0 +1,13 @@
+[Unit]
+Description=Loki
+After=network.target
+
+[Service]
+User=root
+WorkingDirectory=/home/project/squid-stack
+ExecStart=/home/project/squid-stack/loki-linux-amd64 -config.file=/home/project/squid-stack/loki-config.yml
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
