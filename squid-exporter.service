@@ -1,0 +1,15 @@
+# sudo nano /etc/systemd/system/squid-exporter.service
+
+[Unit]
+Description=Squid Exporter
+After=network.target squid.service
+
+[Service]
+User=root
+WorkingDirectory=/home/hel/squid-stack
+ExecStart=/home/hel/squid-stack/squid-exporter/squid-exporter-linux-amd64 -listen "0.0.0.0:9301"
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
